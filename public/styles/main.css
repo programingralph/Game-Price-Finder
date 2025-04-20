@@ -1,0 +1,166 @@
+/* Base styles for all devices */
+body {
+    background-image: url('/images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif; /* Add a readable font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Ensure padding and border are included in element sizes */
+}
+
+/* Ensure all elements use border-box for consistent sizing */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Optional: Style the form and other elements to ensure readability */
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2rem; /* Use rem for scalable padding */
+    border-radius: 10px;
+    max-width: 90%; /* Use percentage for responsive width */
+    width: 600px; /* Maintain a max width for larger screens */
+    margin: 2rem auto; /* Use rem for scalable margin */
+}
+
+
+h1, h2, h3, p {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Add a shadow to text for better readability */
+    text-align: center;
+}
+
+/* Style form elements */
+.formContainer label {
+    display: block; /* Ensure label takes full width */
+    font-size: 1.2rem; /* Scalable font size */
+    /* margin-bottom: 0.5rem; */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.formContainer input {
+    width: 100%; /* Full width for input */
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+}
+
+.formContainer button {
+    width: 25%; /* Full width for button */
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formContainer button:hover {
+    background-color: #45a049;
+}
+
+/* Style for search results */
+h1, h2, h3, p {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    margin: 1rem 0; /* Scalable margins */
+}
+
+/* Container for each game result */
+div {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for results */
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1rem auto;
+    max-width: 90%; /* Responsive width */
+    width: 600px; /* Max width for larger screens */
+}
+
+/* Responsive adjustments for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .formContainer {
+        padding: 1.5rem; /* Reduce padding for smaller screens */
+        width: 90%; /* Ensure it fits the screen */
+    }
+
+    .formContainer label {
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    .formContainer input,
+    .formContainer button {
+        font-size: 0.9rem; /* Slightly smaller font */
+        padding: 0.6rem; /* Reduced padding */
+    }
+
+    div {
+        padding: 1rem;
+        width: 90%; /* Ensure results fit the screen */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Smaller heading */
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive adjustments for mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .formContainer {
+        padding: 1rem; /* Further reduce padding */
+        width: 95%; /* Use more of the screen width */
+    }
+
+    .formContainer label {
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    .formContainer input,
+    .formContainer button {
+        font-size: 0.8rem; /* Even smaller font */
+        padding: 0.5rem; /* Further reduced padding */
+    }
+
+    div {
+        padding: 0.8rem;
+        width: 95%; /* Use more of the screen width */
+    }
+
+    h1 {
+        font-size: 1.2rem; /* Even smaller heading */
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+}
