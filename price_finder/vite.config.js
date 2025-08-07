@@ -8,8 +8,9 @@ export default defineConfig({
     tailwindcss(),
   ],
   build: {
-    outDir: 'dist',
-  },
+  minify: 'esbuild',
+  outDir: 'dist',
+},
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
