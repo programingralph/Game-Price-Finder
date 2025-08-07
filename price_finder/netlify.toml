@@ -6,3 +6,8 @@
   for = "/*.jsx"
   [headers.values]
     Content-Type = "text/javascript"
+
+[build]
+  base = ""
+  command = "npm install && npm run build"
+  publish = "dist"
