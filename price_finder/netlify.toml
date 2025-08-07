@@ -1,13 +1,8 @@
-[[headers]]
-  for = "/*.js"
-  [headers.values]
-    Content-Type = "text/javascript"
-[[headers]]
-  for = "/*.jsx"
-  [headers.values]
-    Content-Type = "text/javascript"
-
 [build]
   base = ""
   command = "npm install && npm run build"
   publish = "dist"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
