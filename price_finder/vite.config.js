@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss(),
   ],
+  base: '/',
   build: {
   minify: 'esbuild',
   outDir: 'dist',
