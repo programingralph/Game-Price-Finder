@@ -10,6 +10,7 @@ export default defineConfig({
   build: {
   minify: 'esbuild',
   outDir: 'dist',
+  sourcemap: false, // Disable sourcemaps to reduce memory
 },
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
